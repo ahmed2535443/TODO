@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' blob:;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 contenteditable="true" onblur="save_title(this)" id="app_title">Note app</h1>
+    <div class="style_cont">
+      <input type="text" placeholder="search_here...." class="search" onkeyup="search_task()">
+    <div class="container">
+      <input type="text" id="taskInput" placeholder="اكتب مهمة جديدة...">
+       <button id="addBtn">إضافة</button>
+
+    </div>
+<ol id="taskList"></ol>
+  </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

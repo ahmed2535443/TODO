@@ -1,0 +1,112 @@
+body {
+  height: 100vh;
+  background: #121212; /* أسود هادي */
+  color: #eeeeee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.style_cont {
+  background: #1e1e1e; /* لون الكونتينر */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  width: 100%;
+  margin: auto;/* عرض ثابت وشكله أنظف */
+}
+
+.container {
+  display: flex;
+  gap: 10px; /* مسافة بين الـ input والـ button */
+  margin-bottom: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+input {
+  flex: 3;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #252525;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #00adb5; /* لون التركواز لما تدوس */
+}
+
+button {
+  flex: 1;
+  background: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #008c92;
+  transform: translateY(-2px); /* حركة خفيفة عند الوقوف عليه */
+}
+
+ol {
+  overflow-y: auto;
+}
+
+li {
+  background: #252525;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #00adb5; /* حركة جمالية على الجنب */
+  animation: fadeIn 0.4s ease; /* أنيميشن لما العنصر يتضاف */
+  height: auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+ul{
+  overflow-y: auto;
+}
+
+li{
+  overflow: auto;
+}
+
+div.ele{
+    background: #252525;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #00adb5; /* حركة جمالية على الجنب */
+  animation: fadeIn 0.4s ease; /* أنيميشن لما العنصر يتضاف */
+  height: auto;
+  gap: 10px;
+}
+.search{
+  width: 85%;
+  margin: auto;
+  margin-left:30px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
